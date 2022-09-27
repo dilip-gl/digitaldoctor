@@ -77,7 +77,7 @@ const Login = (props) => {
             <Modal size='lg' show={props.show} onHide={props.handleModal}>
                 <Modal.Header closeButton />
                 <Modal.Body>
-                    <Modal.Title>Welcome to Digital Doctor</Modal.Title>
+                    <Modal.Title>Welcome to Digital Doctor By Global Logic</Modal.Title>
                     <Row className='d-flex'>
                         <Col md={5} xl={6} lg={6}>
                             <Image src={loginImage} className="loginImg" />
@@ -108,7 +108,7 @@ const Login = (props) => {
 
                                 </Form.Group>
                                 <Form.Group className="mb-3">
-                                    <Form.Label>Email</Form.Label>
+                                    <Form.Label>Enter Email</Form.Label>
                                     <Form.Control type="email" name='emailId' isInvalid={validated.email} placeholder="Enter your email" onChange={handleChange} required />
                                     <Form.Control.Feedback type="invalid">
                                         Please enter the valid email.
@@ -116,7 +116,7 @@ const Login = (props) => {
                                 </Form.Group>
                                 <br />
                                 <Form.Group className="mb-3">
-                                    <Form.Label>Password</Form.Label>
+                                    <Form.Label>Enter Password</Form.Label>
                                     <Form.Control type="password" name="password" isInvalid={validated.pass} placeholder="Enter your password" onChange={handleChange} required />
                                     <Form.Control.Feedback type="invalid">
                                         The password length must be equal & more than 6.
